@@ -1,4 +1,4 @@
-grau = int(input("digite o gra da função "))
+grau = int(input("digite o grau da função "))
 a = float
 if(grau <1 or grau >2):
     print("Grau inválido.")
@@ -10,7 +10,7 @@ elif(grau == 1):
     elif(a != 0):
         b = float(input("digite o valor de b"))
         x = (-1*b)/a
-        print(x)
+        print(round(x,2))
 elif(grau == 2):
     print("A equação é do segundo grau.")
     a = float(input("digite o valor de a"))
@@ -25,15 +25,15 @@ elif(grau == 2):
         elif(delta == 0):
             print("A equação possui apenas uma raiz real")
             raiz = (-1*b)/(2*a)
-            print(raiz)
+            print(round(raiz,2))
         elif(delta > 0):
             print("A equação possui duas raízes reais")
             raiz1 = ((-1*b)+(delta**(1/2)))/(2*a)
             raiz2 = ((-1*b)-(delta**(1/2)))/(2*a)
             if(raiz1>raiz2):
-                print(raiz1)
-                print(raiz2)
+                print(round(raiz1,2))
+                print(round(raiz2,2))
             elif(raiz1<raiz2):
-                print(raiz2)
-                print(raiz1)
+                print(round(raiz2,2))
+                print(round(raiz1,2))
             
